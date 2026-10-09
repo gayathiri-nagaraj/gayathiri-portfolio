@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Gayathiri Nagaraj's portfolio showcasing programming skills, projects, achievements and certifications.">
+
+    <title>Gayathiri Nagaraj | Portfolio</title>
+
+    <style>
+        :root {
+            --background: #0b1120;
+            --surface: #141f33;
+            --accent: #5eead4;
+            --text: #f1f5f9;
+            --muted: #b6c3d5;
+            --border: #293751;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            padding: 18px 8%;
+            background: #111b30;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: var(--accent);
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .hero {
+            min-height: 390px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .eyebrow {
+            color: var(--accent);
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 6vw, 54px);
+            line-height: 1.2;
+            margin: 18px 0;
+        }
+
+        .accent {
+            color: var(--accent);
+        }
+
+        .hero p,
+        .section-intro {
+            max-width: 720px;
+            color: var(--muted);
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 18px;
+            background: var(--accent);
+            color: #0b1120;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 7px;
+        }
+
+        .button.secondary {
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+        }
+
+        h2 {
+            font-size: 29px;
+            margin-bottom: 18px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(225px, 1fr));
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 23px;
+            overflow-wrap: anywhere;
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--muted);
+            margin-bottom: 9px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--accent);
+            padding: 6px 12px;
+            margin: 5px 5px 5px 0;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .contact-card p {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            padding: 25px 8%;
+            text-align: center;
+            color: var(--muted);
+            background: #111b30;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 16px 6%;
+            }
+
+            section {
+                padding: 48px 6%;
+            }
+
+            .hero {
+                min-height: 350px;
+            }
+
+            nav {
+                gap: 10px;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2 class="logo">Gayathiri.</h2>
+
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home -->
+        <section class="hero" id="home">
+            <p class="eyebrow">
+                COMPUTER SCIENCE AND ENGINEERING STUDENT
+            </p>
+
+            <h1>
+                Hello, I'm <span class="accent">Gayathiri Nagaraj</span>
+            </h1>
+
+            <p>
+                An aspiring software developer passionate about
+                programming, Artificial Intelligence, data analytics,
+                and developing practical technology solutions.
+            </p>
+
+            <div class="actions">
+                <a class="button" href="#projects">
+                    Explore My Projects
+                </a>
+
+                <a class="button secondary" href="#contact">
+                    Connect With Me
+                </a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <div class="card">
+                <p>
+                    I am Gayathiri Nagaraj, a second-year B.E.
+                    Computer Science and Engineering student at
+                    V.S.B College of Engineering Technical Campus,
+                    Coimbatore.
+                </p>
+
+                <p>
+                    I am interested in programming, Artificial
+                    Intelligence, Machine Learning, and software
+                    development. I enjoy building practical projects,
+                    learning new technologies, and improving my
+                    problem-solving skills.
+                </p>
+
+                <p><strong>CGPA:</strong> 8.71</p>
+
+                <p>
+                    <strong>Expected Graduation:</strong> 2029
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <p class="section-intro">
+                Technologies and areas I am learning and working with.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Programming Languages</h3>
+                    <p>C, Java, Python, C++</p>
+                </div>
+
+                <div class="card">
+                    <h3>Databases</h3>
+                    <p>MySQL, SQLite</p>
+                </div>
+
+                <div class="card">
+                    <h3>Web Technologies</h3>
+                    <p>HTML, CSS, Flask</p>
+                </div>
+
+                <div class="card">
+                    <h3>Tools and Technologies</h3>
+                    <p>GitHub, Leaflet, OpenStreetMap</p>
+                </div>
+
+                <div class="card">
+                    <h3>Areas of Interest</h3>
+                    <p>
+                        Artificial Intelligence, Machine Learning,
+                        Data Analytics, Internet of Things
+                    </p>
+                </div>
+            </div>
+
+            <p style="margin-top: 22px;">
+                <span class="tag">Problem-solving</span>
+                <span class="tag">Continuous Learning</span>
+                <span class="tag">Project Development</span>
+            </p>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <p class="section-intro">
+                Practical projects that help me apply my technical
+                knowledge to real-world problems.
+            </p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>SmartFleetAI</h3>
+
+                    <p>
+                        A public transport tracking project designed
+                        to display bus information and routes, with
+                        the aim of improving the passenger experience.
+                    </p>
+
+                    <p>
+                        <strong>Technologies:</strong>
+                        Python, Flask, SQLite, Leaflet,
+                        OpenStreetMap
+                    </p>
+
+                    <a href="https://github.com/gayathiri-nagaraj"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Visit GitHub Profile →
+                    </a>
+                </article>
+
+                <article class="card">
+                    <h3>Real-Time Public Transport Tracking</h3>
+
+                    <p>
+                        A web application prototype for viewing bus
+                        details, transport routes, and bus locations
+                        on an interactive map.
+                    </p>
+
+                    <p>
+                        <strong>Technologies:</strong>
+                        Python, Flask, SQLite, HTML, CSS
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Future Projects</h3>
+
+                    <p>
+                        I am continuing to learn and build new
+                        projects in software development and AI.
+                        More projects will be added as they are
+                        completed.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Achievements and certifications -->
+        <section id="achievements">
+            <h2>Achievements & Certifications</h2>
+
+            <p class="section-intro">
+                Certifications and learning experiences that support
+                my technical development.
+            </p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>NPTEL - Introduction to IoT</h3>
+
+                    <p>
+                        Elite certification in Introduction to
+                        Internet of Things.
+                    </p>
+
+                    <p><strong>Score:</strong> 84%</p>
+
+                    <p>
+                        Certificate verification link can be added
+                        here when available.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>AI, ML & Data Analytics Internships</h3>
+
+                    <p>
+                        One-month internship experiences with
+                        NoviTech R&D Private Limited in Artificial
+                        Intelligence, Machine Learning, and
+                        Data Analytics.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Post Graduate Diploma in IT</h3>
+
+                    <p>
+                        CCI Computer Education
+                    </p>
+
+                    <p><strong>Grade:</strong> A+ (95/100)</p>
+
+                    <p>
+                        Certificate verification link can be added
+                        here when available.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>B.E. Computer Science and Engineering</h3>
+
+                    <p>
+                        V.S.B College of Engineering Technical Campus,
+                        Coimbatore
+                    </p>
+
+                    <p><strong>Expected Graduation:</strong> 2029</p>
+                    <p><strong>CGPA:</strong> 8.71</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact and profiles -->
+        <section id="contact">
+            <h2>Let's Connect</h2>
+
+            <p class="section-intro">
+                Feel free to explore my profiles and follow my
+                learning journey.
+            </p>
+
+            <div class="cards">
+                <div class="card contact-card">
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me professionally.</p>
+
+                    <a href="https://www.linkedin.com/in/gayathiri-nagaraj-4bb7b7391/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Visit LinkedIn →
+                    </a>
+                </div>
+
+                <div class="card contact-card">
+                    <h3>GitHub</h3>
+                    <p>Explore my code and projects.</p>
+
+                    <a href="https://github.com/gayathiri-nagaraj"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Visit GitHub →
+                    </a>
+                </div>
+
+                <div class="card contact-card">
+                    <h3>LeetCode</h3>
+                    <p>Explore my coding practice profile.</p>
+
+                    <a href="https://leetcode.com/u/Gayathiri_Nagaraj/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Visit LeetCode →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 Gayathiri Nagaraj | Personal Portfolio
+        </p>
+    </footer>
+
+</body>
+</html>
